@@ -35,14 +35,14 @@ Current release info
 Installing chemprop
 ===================
 
-Installing `chemprop` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `chemprop` from the `conda-forge/label/chemprop_rc` channel can be achieved by adding `conda-forge/label/chemprop_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/chemprop_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `chemprop` can be installed with `conda`:
+Once the `conda-forge/label/chemprop_rc` channel has been enabled, `chemprop` can be installed with `conda`:
 
 ```
 conda install chemprop
@@ -57,26 +57,26 @@ mamba install chemprop
 It is possible to list all of the versions of `chemprop` available on your platform with `conda`:
 
 ```
-conda search chemprop --channel conda-forge
+conda search chemprop --channel conda-forge/label/chemprop_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search chemprop --channel conda-forge
+mamba search chemprop --channel conda-forge/label/chemprop_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search chemprop --channel conda-forge
+mamba repoquery search chemprop --channel conda-forge/label/chemprop_rc
 
 # List packages depending on `chemprop`:
-mamba repoquery whoneeds chemprop --channel conda-forge
+mamba repoquery whoneeds chemprop --channel conda-forge/label/chemprop_rc
 
 # List dependencies of `chemprop`:
-mamba repoquery depends chemprop --channel conda-forge
+mamba repoquery depends chemprop --channel conda-forge/label/chemprop_rc
 ```
 
 
