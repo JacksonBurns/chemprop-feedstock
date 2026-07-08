@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "chemprop" %}
-{% set version = "2.2.4" %}
+{% set version = "2.3.0rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemprop-{{ version }}.tar.gz
-  sha256: 0899c4e437254797676cfe9fa8c99772be4ade72786011e596352dc4fef95a9d
+  sha256: fc41d8a699491b94138cdfb555e21a278c57eaee60a3f82b809435dd0bd6eedc
 
 build:
   noarch: python
@@ -37,6 +37,8 @@ requirements:
     - rdkit
     - scikit-learn
     - scipy
+    - cuik_molmaker >0.2
+    - myerson >=1.0.1
 
 test:
   imports:
