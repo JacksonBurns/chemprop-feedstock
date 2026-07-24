@@ -27,7 +27,6 @@ requirements:
     - rich
     - pytorch >=2.1
     - python >={{ python_min }},<3.13
-    - pytorch::pytorch >=2.1
     - astartes
     - aimsim
     - configargparse
